@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    margin: auto;
+    max-width: 800px;
+}
+
+body{
+   background-image: url(kepek/background.jpg);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+}
+main{
+    background-color: white;
+    display: grid;
+    grid-template-areas: "he he he he"
+    "n n n n"
+    "ar ar ar ar"
+    "f f f f";
+}
+#progmain {
+    background-color: white;
+    display: grid;
+    grid-template-areas: "he he he he"
+    "n n n n"
+    "as ar ar ar"
+    "f f f f";
+}
+header{
+    grid-area: he;
+    
+    background-image: url(kepek/header.jpg);
+    height: 100px;
+}
+
+article{
+    grid-area: ar;
+}
+
+aside{
+    grid-area: as;
+}
+footer{
+    grid-area: f;
+    height: 50px;
+    text-align: center;
+}
+nav{
+    grid-area: n;
+}
+
+#fooldalkepek{
+    display: grid;
+    grid-template-areas: "img img img" ;
+}
+article{
+    height: auto;
+}
+article p{
+    text-align: justify;
+    padding: 10px;
+}
+
+
+#fooldalkepek img {
+    width: 250px;
+    height: 258px;
+    grid-area: img;
+    padding: 10px;
+}
+#bemutatkozas img{
+    float: left;
+    width: 250px;
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+    margin: 10px;
+}
+tr{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: rgba(180, 184, 144, 0.842);
+}
+th{
+    background-color: rgba(120, 126, 70, 0.842);
+}
+tr:hover{
+    background-color: rgba(127, 136, 51, 0.973);
+}
+nav li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    padding: 14px 16px;
+}
+
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    float: left;
+}
+nav{
+    background-color: rgb(39, 38, 38);
+}
+nav li a:hover{
+    background-color: rgb(2, 2, 2);
+}
+
+#jelenleg{
+    background-color: rgb(255, 60, 0);
+}
+
+#programok img{
+    width: 120px;
+    height: 150px;
+    float: left;
+}
+
+section{
+   min-height: 200px;
+
+}
+
+#programok h2{
+    text-align: center;
+}
+#Web ul li a{
+    text-decoration: none;
+    display: block;
+
+}
+#Web ul{
+    list-style-type: none;
+}
+
+#focim {
+    color: white;
+    text-align: center;
+}
+.container {
+    position: relative;
+    
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+footer{
+    border-top: 1px solid black;
+    background-color: rgb(255, 60, 0);
+}
