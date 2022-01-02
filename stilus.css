@@ -8,6 +8,11 @@
 main{
     margin: auto;
     max-width: 800px;
+    display: grid;
+    grid-template-areas: "he he he he"
+    "n n n n"
+    "ar ar ar ar"
+    "f f f f";
 }
 
 body{
@@ -15,14 +20,7 @@ body{
    background-attachment: fixed;
    background-repeat: no-repeat;
 }
-main{
-    
-    display: grid;
-    grid-template-areas: "he he he he"
-    "n n n n"
-    "ar ar ar ar"
-    "f f f f";
-}
+
 #progmain {
     background-color: white;
     display: grid;
@@ -50,9 +48,12 @@ footer{
     grid-area: f;
     height: 50px;
     text-align: center;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 60, 0);
 }
 nav{
     grid-area: n;
+    background-color: rgb(39, 38, 38);
 }
 
 #fooldalkepek{
@@ -113,9 +114,7 @@ nav ul{
 nav li {
     float: left;
 }
-nav{
-    background-color: rgb(39, 38, 38);
-}
+
 nav li a:hover{
     background-color: rgb(2, 2, 2);
 }
@@ -189,10 +188,6 @@ section{
     -ms-transform: translate(-50%, -50%);
   }
 
-footer{
-    border-top: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 60, 0);
-}
 
 #hobbimain img{
     width: auto;
@@ -200,8 +195,9 @@ footer{
     float: left;
     padding: 10px;
 }
-#hobbimain p{
+#hobbimain article p{
     padding: 10px;
+    text-align: justify;
 }
 
 
