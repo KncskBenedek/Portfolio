@@ -39,6 +39,7 @@ header{
 article{
     grid-area: ar;
     background-color: white;
+    padding: 10px;
 }
 
 aside{
