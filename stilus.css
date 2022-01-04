@@ -231,5 +231,8 @@ section{
        width: 50%;
         
     }
+    nav li a{
+        display: block;
+    }
     
 }
